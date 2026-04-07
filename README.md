@@ -22,6 +22,7 @@
 1. Клонирование репозитория:
 
    git clone https://github.com/Sergy-Taph/infra-server.git
+
    cd infra-server
 
 2. Настройка переменных окружения:
