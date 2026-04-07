@@ -21,7 +21,7 @@
 
 1. Клонирование репозитория:
 
-   git clone https://github.com
+   git clone https://github.com/Sergy-Taph/infra-server.git
    cd infra-server
 
 2. Настройка переменных окружения:
@@ -29,7 +29,8 @@
    Создайте файл .env на основе примера:
 
    cp .env.example .env
-   # Отредактируйте пароли в .env
+
+   Отредактируйте пароли в .env
 
 3. Запуск инфраструктуры:
 
