@@ -15,7 +15,7 @@
 
 ---
 
-## 🔧Технологический стек
+## 🔧 Технологический стек
 
 *   **Infrastructure:** Docker, Docker Compose (IaC).
 *   **OS:** Linux (SelectOS / Ubuntu) на базе Mini-PC.
