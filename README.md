@@ -38,8 +38,8 @@
 2. **Настройка окружения**
    ```bash
    cp .env.example .env
-   nano .env```
+   nano .env
 3. **Запуск**
    ```bash
-   docker compose up -d```
+   docker compose up -d
 
