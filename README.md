@@ -1,10 +1,5 @@
 # 📚 Self-Hosted IT Knowledge Base (GitOps Approach)
 
-[![Docker](https://shields.io)](https://docker.com)
-[![Nginx](https://shields.io)](https://nginxproxymanager.com)
-[![PostgreSQL](https://shields.io)](https://postgresql.org)
-[![Wiki.js](https://shields.io)](https://js.wiki)
-
 Персональная база знаний и ИТ-справочник, развернутый на собственном сервере с использованием практик **IaC** (Infrastructure as Code) и **GitOps**.
 
 ---
@@ -39,7 +34,7 @@
 1. **Клонирование проекта:**
    ```bash
    git clone https://github.com/Sergy-Taph/infra-server.git
-   cd infra-server```
+   cd infra-server
 2. **Настройка окружения**
    ```bash
    cp .env.example .env
