@@ -36,3 +36,21 @@ services:
       - ./data/npm-data:/data
       - ./data/letsencrypt:/etc/letsencrypt
     restart: unless-stopped
+
+  # СЕРВИС БЭКАПА
+  db-backup:
+    image: prodrigestivill/postgres-backup-local:15-alpine
+    restart: unless-stopped
+    environment:
+      - POSTGRES_HOST=db
+      - POSTGRES_DB=wikijs
+      - POSTGRES_USER=wikijs
+      - POSTGRES_PASSWORD=${DB_PASS}
+      - SCHEDULE=@daily        # Делать бэкап раз в сутки (в полночь)
+      - BACKUP_KEEP_DAYS=7     # Хранить локально последние 7 копий
+      - BACKUP_SUFFIX=.sql.gz  # Сжимать в архив для экономии места
+    volumes:
+      - ./data/backups:/backups
+    depends_on:
+      - db
+
