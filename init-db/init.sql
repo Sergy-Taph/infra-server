@@ -1,0 +1,4 @@
+CREATE USER nextcloud WITH PASSWORD 'St2012e5123';
+CREATE DATABASE nextcloud;
+GRANT ALL PRIVILEGES ON DATABASE nextcloud TO nextcloud;
+ALTER DATABASE nextcloud OWNER TO nextcloud;
